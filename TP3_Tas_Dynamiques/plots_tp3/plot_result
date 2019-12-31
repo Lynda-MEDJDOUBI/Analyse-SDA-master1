@@ -1,0 +1,134 @@
+
+/******************** INSERTIONS DES CLES DANS L'ORDRE CROISSANT *************************/
+
+plot [0:10000][0:600] 'dynamic_tas_time_insert_c.plot' using 1:3 w lines title "Amortized C", 'dynamic_tas_insert_copy_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+plot 'dynamic_tas_memory_insert_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+plot 'dynamic_tas_insert_copy_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+
+/******************** INSERTIONS DES CLES DANS L'ORDRE DECROISSANT alpha=2 *************************/
+
+/**** cout amoti ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_desc_c.plot' using 1:3 w lines title "Amortized C", 'dynamic_tas_insert_copy_desc_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+/**** cout reel ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_desc_c.plot' using 1:2 w lines title "Amortized C", 'dynamic_tas_insert_copy_desc_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+/********************* espace memoire inutilisé par rapport au cout amorti *******************/
+plot 'dynamic_tas_memory_insert_desc_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+/******************** espace memoire inutilise par rapport au cout reel *********************/
+plot 'dynamic_tas_memory_insert_desc_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+
+plot 'dynamic_tas_insert_copy_desc_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+/**************************** Espace mémoire inutilisé et nombre de copies effectuées ********************/
+plot 'dynamic_tas_memory_insert_desc_c.plot' using 1:3 w lines title "Espace memoire inutilise",'dynamic_tas_insert_copy_desc_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+/******************** INSERTIONS DES CLES DANS L'ORDRE DECROISSANT alpha = nombre d'or ******************/
+
+/**** cout amoti ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_desc_nb_Or_c.plot' using 1:3 w lines title "Amortized C", 'dynamic_tas_insert_copy_desc_nb_Or_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+/**** cout reel ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_desc_nb_Or_c.plot' using 1:2 w lines title "Amortized C", 'dynamic_tas_insert_copy_desc_nb_Or_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+/******** espace memoire inutilisé par rapport au cout amorti ********/
+plot 'dynamic_tas_memory_insert_desc_nb_Or_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+
+/********** espace memoire inutilise par rapport au cout reel ********/
+plot 'dynamic_tas_memory_insert_desc_nb_Or_c.plot' using 1:2 w lines title "Espace memoire inutilise"
+
+
+/****** par rapport au temps reel ********/
+plot 'dynamic_tas_insert_copy_desc_nb_Or_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+/******** par rapport au temps amorti *******/
+plot 'dynamic_tas_insert_copy_desc_nb_Or_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+plot 'dynamic_tas_memory_insert_desc_nb_Or_c.plot' using 1:3 w lines title "Espace memoire inutilise",'dynamic_tas_insert_copy_desc_nb_Or_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+
+/******************** INSERTIONS DES CLES DANS L'ORDRE DECROISSANT alpha = 50 ******************/
+
+/**** cout amoti ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_desc_alpha_50_c.plot' using 1:3 w lines title "Amortized C", 'dynamic_tas_insert_copy_desc_alpha_50_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+/**** cout reel ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_desc_alpha_50_c.plot' using 1:2 w lines title "Amortized C", 'dynamic_tas_insert_copy_desc_alpha_50_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+/******** espace memoire inutilisé par rapport au cout amorti ********/
+plot 'dynamic_tas_memory_insert_desc_alpha_50_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+
+/********** espace memoire inutilise par rapport au cout reel ********/
+plot 'dynamic_tas_memory_insert_desc_alpha_50_c.plot' using 1:2 w lines title "Espace memoire inutilise"
+
+
+/****** par rapport au temps reel ********/
+plot 'dynamic_tas_insert_copy_desc_alpha_50_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+/******** par rapport au temps amorti *******/
+plot 'dynamic_tas_insert_copy_desc_alpha_50_c.plot' using 1:3 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+plot 'dynamic_tas_memory_insert_desc_alpha_50_c.plot' using 1:3 w lines title "Espace memoire inutilise",'dynamic_tas_insert_copy_desc_alpha_50_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+
+
+/******************** INSERTIONS CROISSANTES ET EXTRACTION DU MIN alpha=2 *************************/
+
+/**** cout amoti ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_extractMin_c.plot' using 1:3 w lines title "Amortized C", 'dynamic_tas_insert_copy_extractMin_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+/**** cout reel ****/
+plot [0:10000][0:600] 'dynamic_tas_time_insert_extractMin_c.plot' using 1:2 w lines title "Amortized C", 'dynamic_tas_insert_copy_extractMin_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+/******** espace memoire inutilisé par rapport au cout amorti ********/
+plot 'dynamic_tas_memory_insert_extractMin_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+/********** espace memoire inutilise par rapport au cout reel ********/
+plot 'dynamic_tas_memory_insert_extractMin_c.plot' using 1:2 w lines title "Espace memoire inutilise"
+
+
+plot 'dynamic_tas_insert_copy_extractMin_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+plot 'dynamic_tas_memory_insert_extractMin_c.plot' using 1:3 w lines title "Espace memoire inutilise",'dynamic_tas_insert_copy_extractMin_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

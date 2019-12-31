@@ -1,0 +1,47 @@
+
+/******************** INSERTIONS DES CLES DANS L'ORDRE CROISSANT (tas binomiaux) *************************/
+
+plot [0:10000][0:600] 'binomial_tas_time_insert_c.plot' using 1:3 w lines title "Amortized C", 'binomial_tas_memory_insert_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+plot [0:10000][0:600] 'binomial_tas_time_insert_c.plot' using 1:2 w lines title "Real C", 'binomial_tas_memory_insert_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+plot 'binomial_tas_memory_insert_c.plot' using 1:3 w lines title "Espace memoire utilise"
+
+
+
+/******************** INSERTIONS DES CLES DANS L'ORDRE DECROISSANT (tas binomiaux) *************************/
+
+plot [0:10000][0:600] 'binomial_tas_time_insert_DSC_c.plot' using 1:3 w lines title "Amortized C", 'binomial_tas_memory_insert_DSC_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+plot [0:100][0:600] 'binomial_tas_time_insert_DSC_c.plot' using 1:2 w lines title "Real C", 'binomial_tas_memory_insert_DSC_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+plot [0:1000000][0:600] 'binomial_tas_time_insert_DSC_c.plot' using 1:3 w lines title "Amortized C"
+
+plot [0:1000000][0:600] 'binomial_tas_time_insert_DSC_c.plot' using 1:2 w lines title "Real C"
+
+
+plot [0:600][0:600] 'binomial_tas_memory_insert_DSC_c.plot' using 1:3 w lines title "Espace memoire utilise"
+
+
+
+/******************** INSERTIONS DES CLES  ALEATOIRE (tas binomiaux) *************************/
+
+plot [0:100][0:600] 'binomial_tas_time_insert_rand_c.plot' using 1:3 w lines title "Amortized C", 'binomial_tas_memory_insert_rand_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+plot [0:100][0:600] 'binomial_tas_time_insert_rand_c.plot' using 1:2 w lines title "Real C", 'binomial_tas_memory_insert_rand_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+plot [0:1000000][0:600] 'binomial_tas_time_insert_rand_c.plot' using 1:3 w lines title "Amortized C"
+
+plot [0:1000000][0:600] 'binomial_tas_time_insert_rand_c.plot' using 1:2 w lines title "Real C"
+
+
+plot [0:600][0:600] 'binomial_tas_memory_insert_rand_c.plot' using 1:3 w lines title "Espace memoire utilise"
+
+
+

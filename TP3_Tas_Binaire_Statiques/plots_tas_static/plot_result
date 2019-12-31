@@ -1,0 +1,33 @@
+******************************************************************************************************************************************************************************************
+******************************************************************************* static    ************************************************************************************************
+******************************************************************************************************************************************************************************************
+
+
+
+
+************************************* insertion croissante   *******************************************************
+plot [0:1000][0:600] 'static_tas_time_insert_c.plot' using 1:3 w lines title "Amortized C", 'static_tas_insert_copy_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+plot [0:1000][0:600] 'static_tas_time_insert_c.plot' using 1:2 w lines title "Amortized C", 'static_tas_insert_copy_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+
+************************************* insertion décroissante   *******************************************************
+plot [0:1000][0:600] 'static_tas_time_insert_desc_c.plot' using 1:3 w lines title "Amortized C", 'static_tas_insert_copy_desc_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+plot [0:1000][0:600] 'static_tas_time_insert_desc_c.plot' using 1:2 w lines title "Amortized C", 'static_tas_insert_copy_desc_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+
+************************************* insertion aléatoire  *******************************************************
+plot [0:10000][0:600] 'static_tas_time_insert_rand_c.plot' using 1:3 w lines title "Amortized C", 'static_tas_insert_copy_rand_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+plot [0:10000][0:600] 'static_tas_time_insert_rand_c.plot' using 1:2 w lines title "Amortized C", 'static_tas_insert_copy_rand_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+
+************************************* insertion et extraction   *******************************************************
+plot [0:1000][0:600] 'static_tas_time_insert_extractMin_c.plot' using 1:3 w lines title "Amortized C", 'static_tas_insert_copy_extractMin_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+plot [0:1000][0:600] 'static_tas_time_insert_extractMin_c.plot' using 1:2 w lines title "Amortized C", 'static_tas_insert_copy_extractMin_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+

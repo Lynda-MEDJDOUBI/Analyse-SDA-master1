@@ -1,0 +1,98 @@
+plot [0:1000000][0:600] 'dynamic_array_time_c.plot' using 1:3 w lines title "Amortized C", 'dynamic_array_time_cpp.plot' using 1:3 w lines title "Amortized C++", 'dynamic_array_time_java.plot' using 1:3 w lines title "Amortized JAVA", 'dynamic_array_time_python.plot' using 1:3 w lines title "Amortized Python", 'dynamic_array_copy_c.plot' using 1:2 w boxes title "Memory Allocation"
+
+plot 'dynamic_array_memory_c.plot' using 1:3 w lines title "Espace memoire inutilise"
+
+plot 'dynamic_array_copy_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+
+
+plot [0:1000000][0:600] 'dynamic_array_time_c.plot' using 1:3 w lines title "Amortized C",'dynamic_array_copy_c.plot' using 1:3 w boxes title "Memory allocation"
+
+
+
+plot [0:1000000][0:600] 'dynamic_array_time_c.plot' using 1:2 w lines title "Real cost C",'dynamic_array_copy_c.plot' using 1:2 w boxes title "Memory allocation"
+
+
+
+
+plot 'dynamic_array_memory_c.plot' using 1:2 w lines title "Espace memoire inutilise", 'dynamic_array_copy_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+plot 'dynamic_array_memory_c.plot' using 1:3 w lines title "Espace memoire inutilise",'dynamic_array_copy_c.plot' using 1:3 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+/********************** question 4 *******************************/
+
+plot [0:1000000][0:600] 'dynamic_array_time_question_4_c.plot' using 1:3 w lines title "Amortized C question 4", 'dynamic_array_copy_question_4_c.plot' using 1:2 w boxes title "Memory Allocation question 4"
+
+plot 'dynamic_array_memory_question_4_c.plot' using 1:2 w lines title "Espace memoire inutilise"
+
+plot 'dynamic_array_copy_question_4_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees question 4"
+
+
+/******************* question 5 alpha 5***************************/
+
+plot [0:1000000][0:600] 'dynamic_array_time_question_5_alpha5_c.plot' using 1:3 w lines title "Amortized C question 5 alpha = 5", 'dynamic_array_copy_question_5_alpha5_c.plot' using 1:2 w boxes title "Memory Allocation question 5 alpha = 5"
+
+
+plot 'dynamic_array_memory_question_5_alpha5_c.plot' using 1:2 w lines title "Espace memoire inutilise alpha=5"
+
+
+plot 'dynamic_array_copy_question_5_alpha5_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees question 5 alpha=5"
+
+
+plot 'dynamic_array_memory_question_5_alpha5_c.plot' using 1:2 w lines title "Espace memoire inutilise alpha=5",'dynamic_array_copy_question_5_alpha5_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees question 5 alpha=5"
+
+
+
+
+/******************* question 5 alpha 1.5***************************/
+
+plot [0:1000000][0:600] 'dynamic_array_time_question_5_alpha1.5_c.plot' using 1:3 w lines title "Amortized C question 5 alpha = 1.5", 'dynamic_array_copy_question_5_alpha1.5_c.plot' using 1:2 w boxes title "Memory Allocation question 5 alpha = 1.5"
+
+plot 'dynamic_array_memory_question_5_alpha1.5_c.plot' using 1:2 w lines title "Espace memoire inutilise alpha=1.5"
+
+plot 'dynamic_array_copy_question_5_alpha1.5_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees question 5 alpha=1.5"
+
+
+plot 'dynamic_array_memory_question_5_alpha1.5_c.plot' using 1:2 w lines title "Espace memoire inutilise alpha=1.5",'dynamic_array_copy_question_5_alpha1.5_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees question 5 alpha=1.5"
+
+
+
+
+/******************* question 6 ***************************/
+
+plot [0:1000000][0:600] 'dynamic_array_time_qst6_c.plot' using 1:3 w lines title "Amortized C question 6", 'dynamic_array_copy_qst6_c.plot' using 1:2 w boxes title "Memory Allocation question 6"
+
+plot 'dynamic_array_memory_qst6_c.plot' using 1:2 w lines title "Espace memoire inutilise "
+
+plot 'dynamic_array_copy_qst6_alpha1.5_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+plot 'dynamic_array_memory_qst6_c.plot' using 1:2 w lines title "Espace memoire inutilise ",'dynamic_array_copy_qst6_c.plot' using 1:2 w boxes title "Nombre de copies de valeurs effectuees"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
